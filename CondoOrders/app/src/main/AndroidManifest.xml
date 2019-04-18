@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.condoorders">
+    <!--
+       <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+       <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/info"
+        android:label="CondoOrders"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:name="android.support.multidex.MultiDexApplication"
+        >
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2782899805060026~6367150396"/>
+
+        <activity android:name=".TestAdMob"></activity>
+        <!--
+         <activity
+             android:name="com.example.puzzlegame.MainActivity"
+             android:screenOrientation="landscape"
+             android:label="PuzzleGame" />
+        -->
+        <activity
+            android:name=".BecomeAPartner"
+            android:label="Become Our Partner"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PetrolOrders" />
+        <activity android:name=".GasOrder" />
+        <activity android:name=".HomePage"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ScanBarCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplashScreen">
+
+        </activity>
+        <activity
+            android:name="com.openflood.GameActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.openflood.SettingsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.openflood.InfoActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

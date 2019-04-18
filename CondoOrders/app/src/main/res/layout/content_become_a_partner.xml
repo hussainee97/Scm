@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BecomeAPartner"
+    android:background="@color/white"
+    tools:showIn="@layout/activity_become_a_partner">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-medium"
+            android:text="PARTNER WITH US &amp; EARN MORE" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+       <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/become_a_member_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/greenLight"
+            android:layout_height="wrap_content"
+            android:text="Registration is free!!!"
+            />
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="8dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ENTER YOUR DETAILS BELOW"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/divider"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="45dp"
+                            android:id="@+id/firstNameEditText"
+                            android:layout_marginTop="7dp"
+                            android:padding="10dp"
+                            android:editable="true"
+                            android:inputType="text"
+                            android:textSize="15sp"
+                            android:hint="First Name"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:background="@drawable/edit_text_bg"
+                            android:layout_margin="5dp"
+                            />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:textSize="15sp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:layout_margin="5dp"
+                            android:id="@+id/lastNameEditText"
+                            android:layout_marginTop="7dp"
+                            android:padding="10dp"
+                            android:editable="true"
+                            android:hint="Last Name"
+                            android:background="@drawable/edit_text_bg"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="45dp"
+                            android:id="@+id/phoneNumberEditText"
+                            android:layout_marginTop="7dp"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            android:editable="true"
+                            android:inputType="number"
+                            android:hint="Mobile Number"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:background="@drawable/edit_text_bg"
+                            android:layout_margin="5dp"
+                            />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:layout_margin="5dp"
+                            android:id="@+id/productEditText"
+                            android:layout_marginTop="7dp"
+                            android:padding="10dp"
+                            android:editable="false"
+                            android:textSize="12sp"
+                            android:hint="What do you sell?"
+                            android:background="@drawable/edit_text_bg"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:layout_margin="5dp"
+                        android:id="@+id/businessLocationEditText"
+                        android:textSize="15sp"
+                        android:layout_marginTop="7dp"
+                        android:padding="10dp"
+                        android:layout_gravity="start"
+                        android:gravity="start"
+                        android:editable="true"
+                        android:hint="Enter your Business Location (i.e where you sell your Petrol, Gas, Diseal or Kerosene)"
+                        android:background="@drawable/edit_text_bg"
+                        />
+
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="I agree to the terms and conditions"
+                        />
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/sendPartnershipRequestBtn"
+                        android:background="@drawable/round_btn"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Send PARTNERSHIP Request"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_string"
+            />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Yaay! Your order has been received"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="22dp"
+            android:background="@color/black" />
+
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/orderrecieved" />
+
+
+        <Button
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="Return Home"
+            android:id="@+id/returnHomeBtn"
+            android:background="@drawable/round_btn"
+            android:textColor="@color/white" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="22dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Your order will arrive soon"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:text="Thank You!"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/canceOrderBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:onClick="onCancelOrderBtnClicked"
+            android:text="CANCEL ORDER"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="#128F12"
+            android:text="ORDER ARRIVED"
+            android:onClick="goToHomePage"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
